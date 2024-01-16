@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网站</title>
+</head>
+<body>
+
+    <div style="width: 500px; height: 400px;background-color: cadetblue;">
+        <div style="width: 400px; height: 100px;background-color: beige;margin: 10px auto;">
+            <span style="color: blueviolet;">页面开头部分</span>
+        </div> 
+        <div style="width: 400px; height: 100px;background-color: blanchedalmond;margin: 10px auto;">
+            <span style="color: blueviolet;">页面中间部分</span>
+        </div> 
+        <div style="width: 400px; height: 100px;background-color: burlywood;margin: 10px auto;">
+            <span style="color: blueviolet;">页面结尾部分</span>
+        </div> 
+    </div>
+
+    头像:<input type="file" name="file"/>
+
+    自我介绍：<textarea name="desc"></textarea>
+
+    <input type="hidden" name="userId" value="2233"/>
+    <hr>
+
+    <button type="button">普通按钮</button>或<input type="button" value="普通按钮"/>
+    <button type="reset">重置按钮</button>或<input type="reset" value="重置按钮"/>
+    <button type="submit">提交按钮</button>或<input type="submit" value="提交按钮"/>
+
+
+    <select name="interesting">
+        <option value="swimming">游泳</option>
+        <option value="running">跑步</option>
+        <option value="shooting" selected="selected">射击</option>
+        <option value="skating">溜冰</option>
+    </select>
+
+    你喜欢的球队是：
+    <input type="checkbox" name="team" value="Brazil"/>巴西
+    <input type="checkbox" name="team" value="German" checked/>德国
+    <input type="checkbox" name="team" value="France"/>法国
+    <input type="checkbox" name="team" value="China" checked="checked"/>中国
+    <input type="checkbox" name="team" value="Italian"/>意大利
+
+    你的性别是：
+    <input type="radio" name="sex" value="spring" />男
+    <input type="radio" name="sex" value="summer" checked="checked" />女
+    
+    <form action="http://www.atguigu.com" method="get">
+        用户名 <input type="text" name="username" /> <br>
+        密&nbsp;&nbsp;&nbsp;码 <input type="password" name="password" /> <br>
+        <input type="submit"  value="登录" />
+        <input type="reset"  value="重置" />
+   </form>
+   <hr>
+    <h3 style="text-align: center;">员工技能竞赛评分表</h3>
+    <table  border="1px" style="width: 400px; margin: 0px auto;">
+        <tr>
+            <th>排名</th>
+            <th>姓名</th>
+            <th>分数</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张小明</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>李小东</td></td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>王小虎</td>
+            <td>98</td>
+        </tr>
+    </table>
+
+    <p>
+        记者从工信部了解到，近年来我国算力产业规模快速增长，年增长率近30%，算力规模排名全球第二。
+    </p>
+    <p>
+        工信部统计显示，截至去年底，我国算力总规模达到180百亿亿次浮点运算/秒，存力总规模超过1000EB（1万亿GB）。
+        国家枢纽节点间的网络单向时延降低到20毫秒以内，算力核心产业规模达到1.8万亿元。中国信息通信研究院测算，
+        算力每投入1元，将带动3至4元的GDP经济增长。
+    </p>
+    <p> 
+        近年来，我国算力基础设施发展成效显著，梯次优化的算力供给体系初步构建，算力基础设施的综合能力显著提升。
+        当前，算力正朝智能敏捷、绿色低碳、安全可靠方向发展。
+    </p>
+
+    <hr>
+
+    工信部统计显示，截至去年底，我国算力总规模达到180百亿亿次浮点运算/秒，存力总规模超过1000EB（1万亿GB）。
+    <br>
+        国家枢纽节点间的网络单向时延降低到20毫秒以内，算力核心产业规模达到1.8万亿元。
+    <br>    
+        中国信息通信研究院测算，算力每投入1元，将带动3至4元的GDP经济增长。
+
+    <hr>
+
+    <ol>
+        <li>JAVA</li>
+        <li>前端</li>
+        <li>大数据</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+        <li>JAVASE</li>
+        <li>JAVAEE</li>
+        <li>数据库</li>
+    </ul>
+
+    <hr>
+
+    <!-- 
+        href属性用于定义连接
+            href中可以使用绝对路径,以/开头,始终以一个路径作为基准路径作为出发点
+            href中也可以使用相对路径,不以/开头,以当前文件所在路径为出发点
+            href中也可以定义完整的URL
+        target用于定义打开的方式
+            _blank 在新窗口中打开目标资源
+            _self  在当前窗口中打开目标资源
+     -->
+   <a href="01html的基本结构.html" target="_blank">相对路径本地资源连接</a> <br>
+   <a href="/day01-html/01html的基本结构.html" target="_self">绝对路径本地资源连接</a> <br>
+   <a href="http://www.atguigu.com" target="_blank">外部资源链接</a> <br>
+
+   <hr>
+   <img src="img/logo.png" alt="尚融宝logo" title="尚融宝">
+   <hr>
+   <!-- <audio src="img/music.mp3" autoplay="autoplay" controls="controls" loop="loop" /> -->
+   <audio src="img/music.mp3" controls="controls" loop="loop" />
+   <video controls src="img/movie.mp4" controls="controls" loop="loop" width="400px" />
+
+
+</body>
+</html>
