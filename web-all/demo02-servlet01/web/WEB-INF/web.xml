@@ -4,16 +4,31 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
-<!--    配置 Servlet 类，并起一个别名-->
+    <!--    配置 Servlet 类，并起一个别名
+           - 同一个 servlet-name 可以对应多个不同路径
+           - uer-pattern 的匹配：精确匹配和模糊匹配
+           -->
     <servlet>
-        <servlet-name>userServlet</servlet-name>
-        <servlet-class>com.atguigu.servlet.UserServlet</servlet-class>
+        <servlet-name>userServlet</servlet-name> <!--起一个别名，无所谓-->
+        <servlet-class>com.atguigu.servlet.UserServlet</servlet-class> <!--类名-->
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>userServlet</servlet-name>
+        <servlet-name>userServlet</servlet-name> <!--映射-->
         <url-pattern>/userServlet</url-pattern>
     </servlet-mapping>
+    
+    <!--    配置 Servlet1-->
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>com.atguigu.servlet.Servlet1</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>
