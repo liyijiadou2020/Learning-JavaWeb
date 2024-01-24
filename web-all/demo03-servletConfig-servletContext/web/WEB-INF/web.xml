@@ -52,7 +52,6 @@
 <!--        <url-pattern>/servlet2</url-pattern>-->
 <!--    </servlet-mapping>-->
 
-
     <!--    Servlet3 -->
 <!--    <servlet>-->
 <!--        <servlet-name>servlet3</servlet-name>-->

@@ -29,5 +29,11 @@ public class Servlet3 extends HttpServlet {
         // FileOutputStream fileOutputStream = new FileOutputStream(upload + "/a.txt");
         System.out.println(upload);
 
+        //     获得项目的上下文路径/访问路径，也就是浏览器中输入什么样的路径名才代表访问该项目
+        //     如果使用绝对路径，那就要带上项目的部署路径。比如 /demo03/servlet3。但是项目的部署路径经常变化，最好动态获取。
+        //     获取项目的上下文路径/访问路径
+        String contextPath = servletContext.getContextPath();
+        System.out.println(contextPath);
+
     }
 }
