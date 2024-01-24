@@ -12,7 +12,7 @@ import com.schedule.pojo.SysSchedule;
  *
  * @规范：
  *  1. Dao 接口需要添加良好的文档说明
- *  2. 
+ *  2.
  *
  */
 public interface SysUserDao {

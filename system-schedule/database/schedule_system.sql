@@ -1,5 +1,5 @@
-CREATE DATABASE sys_schedudle;
-USE sys_schedudle;
+CREATE DATABASE sys_schedule;
+USE sys_schedule;
 
 
 SET NAMES utf8mb4;
