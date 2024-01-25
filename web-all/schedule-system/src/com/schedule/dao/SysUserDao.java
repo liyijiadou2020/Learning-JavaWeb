@@ -16,11 +16,6 @@ import com.schedule.pojo.SysSchedule;
  *
  */
 public interface SysUserDao {
-    /**
-     * 用于向数据中增加一条日程记录
-     * @param schedule 日程数据以 SysSchedule 实体类对象形式入参
-     * @return 返回影响数据库记录的行数，行数为 0 说明增加失败，大于 0 说明增加成功
-     */
-    int addSchedule(SysSchedule schedule);
+
 
 }

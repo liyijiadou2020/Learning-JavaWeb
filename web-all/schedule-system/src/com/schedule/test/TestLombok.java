@@ -1,6 +1,7 @@
 package com.schedule.test;
 
 import com.schedule.pojo.SysUser;
+import org.junit.Test;
 
 /**
  * @author: liyijia
@@ -9,6 +10,8 @@ import com.schedule.pojo.SysUser;
  * @description: ***********************************************************
  */
 public class TestLombok {
+
+    @Test
     public void testAnnotation() {
         SysUser sysUser = new SysUser();
     }
