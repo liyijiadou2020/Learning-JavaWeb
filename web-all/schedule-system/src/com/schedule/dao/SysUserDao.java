@@ -1,6 +1,7 @@
 package com.schedule.dao;
 
 import com.schedule.pojo.SysSchedule;
+import com.schedule.pojo.SysUser;
 
 /**
  * @author: liyijia
@@ -16,6 +17,10 @@ import com.schedule.pojo.SysSchedule;
  *
  */
 public interface SysUserDao {
-
-
+    /**
+     * 根据用户名获得完整用户信息的方法
+     * @param username 要查询的用户名
+     * @return 如果找到了返回SysUser对象,找不到返回null
+     */
+    SysUser findByUsername(String username);
 }
